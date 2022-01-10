@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <p id="second"></p> 
+     <script> 
+        document.getElementById("second").innerHTML=" work with javascript";  
+        function myFunction() {
+            document.getElementById("third").innerHTML="learning fuctions.";
+        }
+    </script>
+</head>
+<body> 
+    <p id="first">i want to learn javascript.</p>   
+    <p id="second" style= "display:none">im hiden</p>   
+    <p id="third">im calling function in javascript.</p>
+
+   
+
+    <button type="button" onclick='document.getElementById("first").innerHTML= "im a beginner"'>submit</button>  
+
+    <button type="button" onclick='document.getElementById("first").style.fontSize= "45px";'>font</button> 
+
+    <button type="button" onclick='document.getElementById("first").style.display="none"'>hide</button> 
+    
+    <button type="button" onclick='document.getElementById("second").style.display="block"'>show</button>  
+
+    <button type="button" onclick="myFunction()">call now</button>
+    
+</body>
+</html>
